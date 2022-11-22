@@ -2,7 +2,8 @@
 	
 	class Mysql extends Conexion
 	{
-		private $conexion;
+		// private $conexion;
+		private \PDO $conexion;
 		private $strquery;
 		private $arrValues;
 
