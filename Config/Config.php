@@ -19,4 +19,3 @@ const SPM=",";
 
 ///simbolo de moneda
 const SMONEY="$";
-?>
