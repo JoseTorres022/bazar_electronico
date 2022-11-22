@@ -17,6 +17,7 @@
 		{
 			$this->strquery = $query;
 			$this->arrVAlues = $arrValues;
+			
         	$insert = $this->conexion->prepare($this->strquery);
         	$resInsert = $insert->execute($this->arrVAlues);
         	if($resInsert)
@@ -27,6 +28,7 @@
 	        }
 	        return $lastInsert; 
 		}
+
 		//Busca un registro
 		public function select(string $query)
 		{
@@ -36,6 +38,7 @@
         	$data = $result->fetch(PDO::FETCH_ASSOC);
         	return $data;
 		}
+
 		//Devuelve todos los registros
 		public function select_all(string $query)
 		{
@@ -45,6 +48,7 @@
         	$data = $result->fetchall(PDO::FETCH_ASSOC);
         	return $data;
 		}
+
 		//Actualiza registros
 		public function update(string $query, array $arrValues)
 		{
@@ -54,6 +58,7 @@
 			$resExecute = $update->execute($this->arrVAlues);
 	        return $resExecute;
 		}
+		
 		//Eliminar un registros
 		public function delete(string $query)
 		{
@@ -63,6 +68,3 @@
         	return $del;
 		}
 	}
-
-
- ?>

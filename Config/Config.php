@@ -4,7 +4,7 @@ const BASE_URL="http://localhost/bazar_electronico";
 
 
 //Zona horioa
-date_default_timezone_get('America/Mexico');
+// date_default_timezone_get('America/Mexico');
 
 //datos de conexion a la base de datos
 const DB_HOST="localhost";
