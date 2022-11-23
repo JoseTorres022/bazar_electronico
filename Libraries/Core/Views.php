@@ -5,10 +5,13 @@
 		function getView($controller,$view,$data="")
 		{
 			$controller = get_class($controller);
-			if($controller == "Home"){
-				$view = "Views/".$view.".php";
+			if($controller == "Dashboard"){
+				// $view = "/Views/".$view.".php";
+				// $view="./".$view.".php";
+				$view=VIEWS.$view.".php";
 			}else{
-				$view = "Views/".$controller."/".$view.".php";
+				// $view = "/Views/".$controller."/".$view.".php";
+				$view=VIEWS.$controller."/".$view.".php";
 			}
 			require_once ($view);
 		}

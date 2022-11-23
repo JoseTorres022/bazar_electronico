@@ -1,6 +1,6 @@
 <?php 
 	$controller = ucwords($controller);
-	$controllerFile = "Controllers/".$controller.".php";
+	$controllerFile = "/Controllers/".$controller.".php";
 	if(file_exists($controllerFile))
 	{
 		require_once($controllerFile);
@@ -9,10 +9,13 @@
 		{
 			$controller->{$method}($params);
 		}else{
-			require_once("Controllers/Error.php");
+			// require_once("/Controllers/Error.php");
+			require_once("../bazar_electronico/Controllers/Error.php");
 		}
 	}else{
-		require_once("Controllers/Error.php");
+		// require_once("/Controllers/Error.php");
+		require_once("../bazar_electronico/Controllers/Error.php");
+
 	}
 
  ?>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,8 @@
     <title>Home - BE</title>
 </head>
 <body>
-    <P>Info: Peuqeño Framework V22.11.2022 - <span>by josé torres</span></P>
+    <P>Info: Pequeño Framework MVC V22.11.2022 - <span>by josé torres</span></P>
 </body>
 </html>
+
+html
