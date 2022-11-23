@@ -10,5 +10,3 @@
     <P>Info: Pequeño Framework MVC V22.11.2022 - <span>by josé torres</span></P>
 </body>
 </html>
-
-html

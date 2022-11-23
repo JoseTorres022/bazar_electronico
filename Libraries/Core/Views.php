@@ -5,7 +5,7 @@
 		function getView($controller,$view,$data="")
 		{
 			$controller = get_class($controller);
-			if($controller == "Dashboard"){
+			if($controller == "Home"){
 				// $view = "/Views/".$view.".php";
 				// $view="./".$view.".php";
 				// $view=VIEWS.$view.".php";
