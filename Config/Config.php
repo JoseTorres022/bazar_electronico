@@ -2,9 +2,9 @@
 
 const BASE_URL="http://localhost/proyectos/bazar_electronico";
 // const LIBS="../bazar_electronico/Libraries/";
-const LIBS="./Libraries/";
+// const LIBS="./Libraries/Core/";
 // const VIEWS="../bazar_electronico/Views/";
-const VIEWS=("./Views/Dashboard");
+// const VIEWS=("./Views");
 
 
 //Zona horioa
