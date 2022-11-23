@@ -8,7 +8,7 @@
     //Retorla la url del Assets
     function media()
     {
-        return BASE_URL."../Assests";
+        return BASE_URL."/Assests";
     }
 	//Muestra información formateada
 	function dep($data)

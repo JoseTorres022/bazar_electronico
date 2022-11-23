@@ -1,6 +1,6 @@
 <?php 
 
-const BASE_URL="http://localhost/bazar_electronico";
+const BASE_URL="http://localhost:8012/bazar_electronico";
 // const LIBS="../bazar_electronico/Libraries/";
 // const LIBS="./Libraries/Core/";
 // const VIEWS="../bazar_electronico/Views/";
