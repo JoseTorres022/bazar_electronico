@@ -1,8 +1,11 @@
 <?php 
 
-const BASE_URL="http://localhost/bazar_electronico/";
-const LIBS="../bazar_electronico/Libraries/";
-const VIEWS="../bazar_electronico/Views/";
+const BASE_URL="http://localhost/proyectos/bazar_electronico";
+// const LIBS="../bazar_electronico/Libraries/";
+const LIBS="./Libraries/";
+// const VIEWS="../bazar_electronico/Views/";
+const VIEWS=("./Views/Dashboard");
+
 
 //Zona horioa
 // date_default_timezone_get('America/Mexico');
