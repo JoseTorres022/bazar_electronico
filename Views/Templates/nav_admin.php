@@ -8,31 +8,31 @@
       </div>
     </div>
     <ul class="app-menu">
-      <li><a class="app-menu__item" href="<?= base_url(); ?>/dashboard"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
-      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview">
-          <!-- <i class="app-menu__icon fa fa-laptop"></i> -->
-          <i class="app-menu__icon fa fa-users" aria-hidden="true"></i>
-          <span class="app-menu__label">Usuarios</span><i class="treeview-indicator fa fa-angle-right"></i>
+
+      <li><a class="app-menu__item" href="<?= base_url(); ?>/dashboard">
+          <i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span>
         </a>
+      </li>
+
+      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users" aria-hidden="true"></i>
+          <span class="app-menu__label">Usuarios</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+
         <ul class="treeview-menu">
-          <li><a class="treeview-item" href="<?= base_url(); ?>/usuarios"><i class="icon fa fa-circle-o"></i>
-              Usuarios</a></li>
-          <!-- <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li> -->
-          <li><a class="treeview-item" href="<?= base_url(); ?>/roles"><i class="icon fa fa-circle-o"></i>
-              Roles</a></li>
-          <li><a class="treeview-item" href="<?= base_url(); ?>/permisos"><i class="icon fa fa-circle-o"></i>
-              Permisos</a>
-          </li>
+
+          <li><a class="treeview-item" href="<?= base_url(); ?>/usuarios"><i class="icon fa fa-user" aria-hidden="true"></i> Usuarios</a></li>
+          <li><a class="treeview-item" href="<?= base_url(); ?>/roles"><i class="icon fa  fa-id-card-o" aria-hidden="true"></i> Roles</a></li>
+          <li><a class="treeview-item" href="<?= base_url(); ?>/permisos"><i class="icon fafa fa-pen" aria-hidden="true"></i> Permisos</a></li>
+      
         </ul>
       </li>
 
-      <li><a class="app-menu__item" href="<?= base_url(); ?>/clientes"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Clientes</span></a>
-      </li>
-      <li><a class="app-menu__item" href="<?= base_url(); ?>/productos"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Productos</span></a>
-      </li>
-      <li><a class="app-menu__item" href="<?= base_url(); ?>/pedidos"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Pedidos</span></a></li>
-      <li><a class="app-menu__item" href="<?= base_url(); ?>/logout"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Cerrar
-            sesion</span></a></li>
+      <li><a class="app-menu__item" href="<?= base_url(); ?>/clientes"><i class="app-menu__icon fa fa-clipboard" aria-hidden="true"></i><span class="app-menu__label"> Clientes</span></a></li>
+
+      <li><a class="app-menu__item" href="<?= base_url(); ?>/productos"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label"> Productos</span></a></li>
+
+      <li><a class="app-menu__item" href="<?= base_url(); ?>/pedidos"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label"> Pedidos</span></a></li>
+
+      <li><a class="app-menu__item" href="<?= base_url(); ?>/logout"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label"> Cerrar sesion</span></a></li>
     </ul>
   </aside>
   <!-- <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
