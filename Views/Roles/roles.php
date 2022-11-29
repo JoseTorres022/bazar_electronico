@@ -1,8 +1,12 @@
-<?php headerAdmin($data); ?>
+<?php headerAdmin($data); 
+  getMotal('modalRoles',$data);
+?>
   <main class="app-content">
     <div class="app-title">
       <div>
-        <h1><i class="fa fa-dashboard"></i><?= $data['page_title'] ?></h1>
+        <h1><i class="fa fa-dashboard"></i><?= $data['page_title'] ?>
+        <button class="btn btn-primary" type="button" onclick="openModal();">Nuevo</button>
+      </h1>
         <!-- <p>Start a beautiful journey here</p> -->
       </div>
       <ul class="app-breadcrumb breadcrumb">
