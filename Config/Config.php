@@ -11,11 +11,11 @@ const BASE_URL="http://localhost:8012/bazar_electronico";
 // date_default_timezone_get('America/Mexico');
 
 //datos de conexion a la base de datos
-const DB_HOST="localhost";
-const DB_NAME="bazar_electronico";
-const DB_USER="josetorresxampp";
-const DB_PASSWORD="123456789";
-const DB_CHARSET="charset=utf8";
+const DB_HOST="localhost";//nombre del servidor
+const DB_NAME="bazar_electronico";//nombre  la base de datos
+const DB_USER="josetorresxampp";//nombre del usuario
+const DB_PASSWORD="123456789";//password de l usaurio
+const DB_CHARSET="charset=utf8";//
 
 //delimitadores decimal y millar.
 const SPD=".";
