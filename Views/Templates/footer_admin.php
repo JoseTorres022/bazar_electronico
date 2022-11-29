@@ -7,8 +7,13 @@
 <script src="<?= media(); ?>/js/functions_admin.js"></script>
 <!-- The javascript plugin to display page loading on top-->
 <script src="<?= media(); ?>/js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
+<!-- plugins para el datablat -->
+<script type="text/javascript" src="<?= media(); ?>/js/plugins/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="<?= media(); ?>/js/plugins/dataTables.bootstrap.min.js"></script>
+
 <script src="<?= media(); ?>/js/functions_roles.js"></script>
+</script>
+
 
 </body>
 
