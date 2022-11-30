@@ -26,9 +26,9 @@ class Roles extends Controllers
 				$arrData[$i]['status'] = '<span class="badge badge-danger">Inactivo</span>';
 			}
 			$arrData[$i]['options'] = '<div class="text-center">
-			<button class="btn btn-secondary btn-sm btnPermisosRol" rl="'.$arrData[$i]['idrol'].'" title="Permisos"><i class="fas fa-key"></i></button>
-			<button class="btn btn-primary btn-sm btnEditRol" rl="'.$arrData[$i]['idrol'].'" title="Editar"><i class="fas fa-pencil-alt"></i></button>
-			<button class="btn btn-danger btn-sm btnDelRol" rl="'.$arrData[$i]['idrol'].'" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+			<button class="btn btn-secondary btn-sm btnPermisosRol" rl="' . $arrData[$i]['idrol'] . '" title="Permisos"><i class="fas fa-key"></i></button>
+			<button class="btn btn-primary btn-sm btnEditRol" rl="' . $arrData[$i]['idrol'] . '" title="Editar"><i class="fas fa-pencil-alt"></i></button>
+			<button class="btn btn-danger btn-sm btnDelRol" rl="' . $arrData[$i]['idrol'] . '" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
 			</div>';
 		}
 		//construyecto JSON
@@ -36,5 +36,22 @@ class Roles extends Controllers
 		die();
 		//dep($arrData);
 	}
+	public function setRol()
+	{
+		$strRol = strClean($_POST['txtNombre']);
+		$strDescripcion = strClean($_POST['Descripcion']);
+		$intStatus = strClean($_POST['listStatus']);
+		$request_rol = $this->model->insertRol($strRol, $strDescripcion, $intStatus);
+		if ($request_rol > 0) 
+		{
+			$arrResponse = array('status' => true, 'msg' => 'Datos Actualizados correctamente.');
+		} else if ($request_rol == 'exist') {
+
+			$arrResponse = array('status' => false, 'msg' => '¡Atención! El Rol ya existe.');
+		} else {
+			$arrResponse = array("status" => false, "msg" => 'No es posible almacenar los datos.');
+		}
+		echo json_encode($arrResponse, JSON_UNESCAPED_UNICODE);
+		die();
+	}
 }
-?>
