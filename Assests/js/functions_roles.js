@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { "data": "descripcion" },
             { "data": "status" }
         ],
-        "resonsieve": "true",
+        "responsive": "true",
         "bDestroy": true,
         "iDisplayLength": 10,
         "order": [[0, "desc"]]

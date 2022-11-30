@@ -26,7 +26,7 @@ getMotal('modalRoles', $data);
                   <th>ID</th>
                   <th>Nombre</th>
                   <th>Descripcion</th>
-                  <th>Estado</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
